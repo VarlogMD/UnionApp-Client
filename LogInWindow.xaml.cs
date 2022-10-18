@@ -78,5 +78,13 @@ namespace UnionApp
             response = await result.Content.ReadAsStringAsync();
             return response;
         }
+
+        private void Button_Signup_Click(object sender, RoutedEventArgs e)
+        {
+            RegisterWindow objectRegisterWindow = new RegisterWindow();
+            objectRegisterWindow.Show();
+            this.Close();
+
+        }
     }
 }
