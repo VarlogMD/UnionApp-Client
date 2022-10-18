@@ -43,7 +43,9 @@ namespace UnionApp
                 if (string.Compare(response, "true") == 0)
                 {
                     //Debug.WriteLine("Login OK");
-                    MessageBox.Show("Login Ok");
+                    MainWindow objectMainWindow = new MainWindow();
+                    objectMainWindow.Show();
+                    this.Close();
                 }
                 else
                 {

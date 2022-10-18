@@ -5,18 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UnionApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="800">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="467*"/>
             <RowDefinition Height="17*"/>
-            <RowDefinition Height="402*"/>
-            <RowDefinition Height="15*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="101*"/>
-            <ColumnDefinition Width="299*"/>
+            <ColumnDefinition Width="90*"/>
+            <ColumnDefinition Width="237*"/>
+            <ColumnDefinition Width="75*"/>
         </Grid.ColumnDefinitions>
-        <DataGrid HorizontalAlignment="Center" Height="402" Grid.Row="1" VerticalAlignment="Center" Width="182" SelectionChanged="DataGrid_SelectionChanged"/>
+        <DataGrid x:Name="Roomlist" HorizontalAlignment="Center" Height="430" VerticalAlignment="Center" Width="150" Background="#FF4794BC" HeadersVisibility="None" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <DataGrid x:Name="Userlist" Grid.Column="2" HorizontalAlignment="Center" Height="430" VerticalAlignment="Center" Width="130" Background="#FF4794BC" HeadersVisibility="None" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalScrollBarVisibility="Disabled"/>
+
 
     </Grid>
 </Window>
